@@ -1,0 +1,9 @@
+#root {
+    color: green;
+    border: 1px solid red;
+    height: 300px;
+    width: 98%;
+    padding: 5px;
+    margin: 5px;
+    overflow-y: auto;
+}
