@@ -1,18 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import component, { HeaderComponent } from "./components/HeaderComponent";
+import Component from "./components/parentChildComponents/ParentComponent";
 
-import ContentComponent from "./components/ContentComponent";
-import FooterComponent from "./components/FooterComponent";
+var randomData = {
+    dataForChild: "Mayank Gupta",
+    dataForSubChild: "TechnoFunnel",
+    address: {
+        street: "akshdjsagd",
+        city: "ashfckncvkaf"
+    }
+}
 
-alert(component)
+var randomData2 = {
+    dataForChild1: "Mayank Gupta",
+    dataForSubChild1: "TechnoFunnel"
+}
 
 ReactDOM.render((
-    <div>
-        <h1>These are the Application Components</h1><hr/>
-        <HeaderComponent></HeaderComponent><hr/>
-        <ContentComponent></ContentComponent><hr/>
-        <FooterComponent></FooterComponent><hr/>
-    </div>
+    <Component randomData={randomData} randomData2={randomData2}></Component>
 ), document.getElementById("root"));

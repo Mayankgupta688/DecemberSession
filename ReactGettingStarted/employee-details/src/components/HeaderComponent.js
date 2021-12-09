@@ -1,7 +1,35 @@
+import React from "react";
+
 export default function HeaderComponent() {
-    return <h1>This is Header Component</h1>
+    return React.createElement("div", null, [
+            React.createElement("div", null,
+                React.createElement("h1", null,
+                    "This is my header")
+            ),
+            React.createElement("div", null,
+                [
+                    React.createElement("h1", null,
+                        "This is my header"),
+                    React.createElement("p", null,
+                        React.createElement("h2", null,
+                        "This is Non Critical Header")
+                        )
+                ]
+            )
+        ]
+    )
 }
 
-var data = "Mayank";
 
-export default data;
+<div>
+    <div>
+        <h1>This is My Header</h1>
+    </div>
+
+    <div>
+        <h1>This is My Header</h1>
+        <p>
+            <h2>This is Non Critical Header</h2>
+        </p>
+    </div>
+</div> 
