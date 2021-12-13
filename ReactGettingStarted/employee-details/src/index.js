@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Component from "./stateBased/TimerComponent";
+import Component from "./stateBased/ParentChild";
 
 ReactDOM.render((
-    <Component></Component>
+    <Component counter="100"></Component>
 ), document.getElementById("root"));
 
 
