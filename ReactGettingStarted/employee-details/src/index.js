@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Component from "./stateBased/ParentChild";
+import Component from "./components/hooks/UpdateCounter";
 
 ReactDOM.render((
-    <Component counter="100"></Component>
+    <Component></Component>
 ), document.getElementById("root"));
 
 
