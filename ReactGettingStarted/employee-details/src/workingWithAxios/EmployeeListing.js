@@ -64,7 +64,6 @@ export default class EmployeeListingComponent extends React.Component {
     }
 
     componentDidMount() {
-        debugger;
         Axios.get("http://localhost:4000/employees").then((response) => {
             debugger
             console.dir(response)

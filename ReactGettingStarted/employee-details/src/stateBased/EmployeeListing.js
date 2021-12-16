@@ -10,8 +10,7 @@ export default class EmployeeListingClass extends React.Component  {
             employeeList: empList,
         }
 
-        this.getEventDetails = this.getEventDetails.bind(this);
-        this.deleteAllEmployee = this.deleteAllEmployee.bind(this)
+        this.deleteAllEmployee = this.deleteAllEmployee.bind(this);
         this.notifySubject = new Subject();
 
         this.notifySubject.subscribe((data) => {
@@ -28,7 +27,7 @@ export default class EmployeeListingClass extends React.Component  {
 
     }
 
-    getEventDetails(event) {
+    getEventDetails = (event) => {
         debugger;
         var updatedList = this.state.employeeList.filter((emp) => {
             return emp.id !== event.target.id
@@ -37,7 +36,6 @@ export default class EmployeeListingClass extends React.Component  {
         this.setState({
             employeeList: updatedList
         })
-
     }
 
     deleteAllEmployee() {
