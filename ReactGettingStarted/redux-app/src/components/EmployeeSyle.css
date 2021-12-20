@@ -1,0 +1,11 @@
+label {
+    width: 250px;
+    display: inline-block;
+}
+
+#form_element{
+    padding: 15px;
+    margin: 15px;
+    width: 98%;
+    border: 1px solid red;
+}
